@@ -8,9 +8,9 @@
   },
   "private": true,
   "dependencies": {
-    "@angular-devkit/build-angular": "~16.0.2",
+    "@angular-devkit/build-angular": "^16.2.14",
     "@angular/animations": "~16.0.1",
-    "@angular/cli": "~16.0.2",
+    "@angular/cli": "^16.2.14",
     "@angular/common": "~16.0.1",
     "@angular/compiler": "~16.0.1",
     "@angular/compiler-cli": "~16.0.1",
@@ -25,10 +25,7 @@
     "ngx-toastr": "^17.0.2",
     "rxjs": "~7.8.1",
     "tslib": "^2.5.0",
-    "zone.js": "~0.13.0",
-    "typescript": "~5.0.4"
-  },
-  "devDependencies": {
-
+    "typescript": "~5.0.4",
+    "zone.js": "~0.13.0"
   }
 }

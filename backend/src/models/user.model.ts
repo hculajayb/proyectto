@@ -6,7 +6,7 @@ export interface User{
     password: string;
     name:string;
     address:string;
-    isAdmin:boolean;
+    isadmin:boolean;//se renombra isAdmin por isadmin ya que las mayusculas dan error en postgres
 }
 
 export const UserSchema = new Schema<User>({
@@ -14,7 +14,7 @@ export const UserSchema = new Schema<User>({
     email: {type: String, required: true, unique: true},
     password: {type: String, required: true},
     address: {type: String, required: true},
-    isAdmin: {type: Boolean, required: true},
+    isadmin: {type: Boolean, required: true},
 }, {
     timestamps: true,
     toJSON:{

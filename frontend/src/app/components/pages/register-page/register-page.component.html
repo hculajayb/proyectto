@@ -1,50 +1,50 @@
 <div class="container">
   <div class="details">
-    <app-title title="Register"></app-title>
+    <app-title title="Registro"></app-title>
     <form [formGroup]="registerForm" (ngSubmit)="submit()">
       <text-input
-      [control]="fc.name"
-      [showErrorsWhen]="isSubmitted"
-      label="Name">
-    `</text-input>
+        [control]="fc.name"
+        [showErrorsWhen]="isSubmitted"
+        label="Nombre">
+        `</text-input>
 
-    <text-input
-    [control]="fc.email"
-    [showErrorsWhen]="isSubmitted"
-    label="Email"
-    type="email">
-  `</text-input>
-
-
-  <text-input
-  [control]="fc.password"
-  [showErrorsWhen]="isSubmitted"
-  label="Password"
-  type="password">
-`</text-input>
-
-<text-input
-[control]="fc.confirmPassword"
-[showErrorsWhen]="isSubmitted"
-label="Confirm Password"
-type="password">
-`</text-input>
-
-<text-input
-[control]="fc.address"
-[showErrorsWhen]="isSubmitted"
-label="Address">
-`</text-input>
+      <text-input
+        [control]="fc.email"
+        [showErrorsWhen]="isSubmitted"
+        label="Correo Electrónico"
+        type="email">
+        `</text-input>
 
 
-<default-button text="Register"></default-button>
+      <text-input
+        [control]="fc.password"
+        [showErrorsWhen]="isSubmitted"
+        label="Contraseña"
+        type="password">
+        `</text-input>
 
-<div class="login">
-  Already a user? &nbsp;
-  <a routerLink="/login" [queryParams]="{returnUrl: returnUrl}">
-    Login Here
-  </a>
-</div>
+      <text-input
+        [control]="fc.confirmPassword"
+        [showErrorsWhen]="isSubmitted"
+        label="Confirmar Contraseña"
+        type="password">
+        `</text-input>
+
+      <text-input
+        [control]="fc.address"
+        [showErrorsWhen]="isSubmitted"
+        label="Dirección">
+        `</text-input>
+
+
+      <default-button text="Registrar"></default-button>
+
+      <div class="login">
+        ¿Ya tienes una cuenta?
+        <a routerLink="/login" [queryParams]="{returnUrl: returnUrl}">
+          Inicia Sesión
+        </a>
+      </div>
 
 
     </form>

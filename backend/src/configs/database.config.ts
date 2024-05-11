@@ -1,11 +1,5 @@
-import {connect, ConnectOptions} from 'mongoose';
+import postgres from "postgres";
 
-export const dbConnect = () => {
-    connect(process.env.MONGO_URI!, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true
-    } as ConnectOptions).then(
-        () => console.log("connect successfully"),
-        (error) => console.log(error)
-    )
-}
+//conexion a la base de datos foodservice
+const dbConnect = postgres('postgres://postgres:root@localhost:5432/foodservice');
+export default dbConnect;
